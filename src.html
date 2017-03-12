@@ -1,0 +1,391 @@
+
+<html>
+<head>
+<title>Student Registration Form</title>
+<style type="text/css">
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Georgia, serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+#block1 {
+		display: none;
+        position: absolute;
+        top: 10%;
+        left: 2%;
+        right: 2%;
+        width: 95%;
+        height: 500px;
+        padding: 16px;
+        border: 3px solid #ADD8E6;
+        background-color: white;
+        z-index:1002;
+		font-family:Times New Roman;
+        overflow:scroll;
+}
+
+h3{font-family:Times New Roman; font-size: 22pt; font-style: normal; font-weight: bold;
+text-align: center; text-decoration: underline }
+
+
+.CSSTableGenerator {
+margin:0px;padding:0px;
+width:100%;	box-shadow: 10px 10px 5px #888888;
+border:1px solid #000000;
+
+-moz-border-radius-bottomleft:0px;
+-webkit-border-bottom-left-radius:0px;
+border-bottom-left-radius:0px;
+
+-moz-border-radius-bottomright:0px;
+-webkit-border-bottom-right-radius:0px;
+border-bottom-right-radius:0px;
+
+-moz-border-radius-topright:0px;
+-webkit-border-top-right-radius:0px;
+border-top-right-radius:0px;
+
+-moz-border-radius-topleft:0px;
+-webkit-border-top-left-radius:0px;
+border-top-left-radius:0px;
+}.CSSTableGenerator table{
+width:100%;
+height:100%;
+margin:0px;padding:0px;
+}.CSSTableGenerator tr:last-child td:last-child {
+-moz-border-radius-bottomright:0px;
+-webkit-border-bottom-right-radius:0px;
+border-bottom-right-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+-moz-border-radius-topleft:0px;
+-webkit-border-top-left-radius:0px;
+border-top-left-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+-moz-border-radius-topright:0px;
+-webkit-border-top-right-radius:0px;
+border-top-right-radius:0px;
+}.CSSTableGenerator tr:last-child td:first-child{
+-moz-border-radius-bottomleft:0px;
+-webkit-border-bottom-left-radius:0px;
+border-bottom-left-radius:0px;
+}.CSSTableGenerator tr:hover td{
+
+}.CSSTableGenerator tr:nth-child(odd){ background-color:#e5e5e5; }
+.CSSTableGenerator tr:nth-child(even)    { background-color:#ffffff; }
+.CSSTableGenerator td{
+vertical-align:middle;
+
+
+border:1px solid #000000;
+border-width:0px 1px 1px 0px;
+text-align:CENTER;
+padding:7px;
+font-size:15px;
+font-family:Times New Roman;
+font-weight:normal;
+color:#000000;
+}.CSSTableGenerator tr:last-child td{
+border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+	background:-o-linear-gradient(bottom, #4c4c4c 5%, #000000 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4c4c4c), color-stop(1, #000000) );	background:-moz-linear-gradient( center top, #4c4c4c 5%, #000000 100% );	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4c4c", endColorstr="#000000");	background: -o-linear-gradient(top,#4c4c4c,000000);
+background-color:#4c4c4c;
+border:0px solid #000000;
+text-align:center;
+border-width:0px 0px 1px 1px;
+font-size:14px;
+font-family:arial;
+font-weight:bold;
+color:#ffffff;
+}
+.CSSTableGenerator tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #4c4c4c 5%, #000000 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4c4c4c), color-stop(1, #000000) );	background:-moz-linear-gradient( center top, #4c4c4c 5%, #000000 100% );	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4c4c", endColorstr="#000000");	background: -o-linear-gradient(top,#4c4c4c,000000);
+background-color:#4c4c4c;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+border-width:0px 0px 1px 1px;
+}
+ .black_overlay,.black_overlay1{
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index:1001;
+        -moz-opacity: 1;
+        opacity:1;
+        filter: alpha(opacity=80);
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+
+<script>
+
+function ajaxFunction(r){
+	var hr = new XMLHttpRequest();
+    // Create some variables we need to send to our PHP file
+     var url = "GradesView.php";
+	 var reg =
+	312314107038;
+
+
+    var vars = "regno="+reg+"&"+r+"="+r;
+    hr.open("POST", url, true);
+    // Set content type header information for sending url encoded variables in the request
+    hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    // Access the onreadystatechange event for the XMLHttpRequest object
+    hr.onreadystatechange = function() {
+	    if(hr.readyState == 4 && hr.status == 200) {
+		    var return_data = hr.responseText;
+			document.getElementById("ajaxDiv").innerHTML = return_data;
+	    }
+    }
+    // Send the data to PHP now... and wait for response to update the status div
+    hr.send(vars); // Actually execute the request
+    document.getElementById("ajaxDiv").innerHTML = "processing..."+r;
+	}
+
+function setVisibility(r,id,visibility)
+{
+
+	document.getElementById(id).style.display = visibility;
+	ajaxFunction(r);
+
+}
+
+function setHide()
+{
+
+	document.getElementById("block1").style.display = "none";
+}
+
+</script>
+<style>
+</style>
+</head>
+
+<body style="background-color:#ADD8E6;">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="StudentView.php"></a>
+                <a align="right" class="navbar-brand" href="Logout1.php">Logout</a>
+                <span class="navbar-brand">
+
+               </span>
+
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+           <div style="float:right;"> <span class="navbar-brand">Welcome: 312314107038</span>  </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+<br><br>
+
+<h3>STUDENT REPORT</h3>
+
+<form action="form.php" metdod="POST">
+
+<table class="CSSTableGenerator table">
+
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td>REGISTER NO</td>
+<td>312314107038</td>
+</tr>
+<tr>
+<td>ROLL NO</td>
+<td>14EI215</td>
+</tr>
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>NAME</td>
+<td>DINESHADHITHYA V</td>
+</tr>
+
+<tr>
+<td>DEPT</td>
+<td>EIE</td>
+</tr>
+
+<tr>
+<td>BATCH</td>
+<td>2014</td>
+</tr>
+
+
+<tr>
+<td>SECTION</td>
+<td>A</td>
+</tr>
+
+</table>
+
+<center><b>GPA TABLE:</b></center>
+
+<table class="CSSTableGenerator table"  cellpadding = "5" cellSPACING = "5">
+
+<tr>
+
+<td>SEM</td>
+<td>SEM1(260)</td>
+<td>SEM2(270)</td>
+<td>SEM3(260)</td>
+<td>SEM4(250)</td>
+<td>SEM5(250)</td>
+<td>SEM6(0)</td>
+<td>SEM7(0)</td>
+<td>SEM8(0)</td>
+<td>CGPA(1290)</td>
+</tr>
+<tr>
+<td>Marks</td>
+<td>229</td>
+<td>216</td>
+<td>188</td>
+<td>198</td>
+<td>182</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1013</td>
+</tr>
+<tr>
+
+<td>Credits<br/>Earned</td>
+<td>26</td>
+<td>27</td>
+<td>26</td>
+<td>25</td>
+<td>25</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>129</td>
+
+
+</tr>
+<tr>
+
+<td>GPA/CGPA</td>
+<td>8.81</td>
+<td>8.00</td>
+<td>7.23</td>
+<td>7.92</td>
+<td>7.28</td>
+<td></td>
+<td></td>
+<td></td>
+<td>7.85</td>
+
+</tr>
+
+</table>
+<center><b>ARREARS TABLE:</b></center>
+
+<table class="CSSTableGenerator table" cellpadding = "5" cellSPACING = "5">
+
+<tr>
+
+
+<td>SEM</td>
+<td>SEM1(9)</td>
+<td>SEM2(9)</td>
+<td>SEM3(8)</td>
+<td>SEM4(8)</td>
+<td>SEM5(9)</td>
+<td>SEM6(0)</td>
+<td>SEM7(0)</td>
+<td>SEM8(0)</td>
+<td>TOTAL(43)</td>
+</tr>
+<tr>
+<td>NO. OF <br/>ARREARS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+
+</tr>
+
+</table>
+<br/>
+<center>
+<input type="button" name="view" class="myButton" value="ViewAllData" onclick="document.getElementById('block1').style.display='block';document.getElementById('fade1').style.display='block';setVisibility(this.value,'block1','inline');"/>
+</center>
+<div id="fade1" class="black_overlay1">
+<div id="block1" class="white_content">
+<span style="float:left">
+<input type='button' class="myButton" id='hide' name='Hide' onclick="document.getElementById('block1').style.display='none';document.getElementById('fade1').style.display='none';setVisibility('','block1','none')"  value='Hide'/>
+</span>
+<br/>
+<br/>
+<div id="ajaxDiv">
+</div>
+</div>
+</div>
+
+
+</form>
+
+</body>
+</html>

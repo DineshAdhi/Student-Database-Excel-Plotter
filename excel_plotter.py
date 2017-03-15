@@ -2,7 +2,7 @@ import dill as pickle
 import json
 import xlwt
 
-with open('main_list.pkl','r') as src:
+with open('list.pkl','r') as src:
     mylist = pickle.load(src);
 
 print json.dumps(mylist, indent=4, sort_keys=True)
@@ -10,9 +10,6 @@ print json.dumps(mylist, indent=4, sort_keys=True)
 
 for i in mylist:
     print i
-
-    
-
 
 book = xlwt.Workbook(encoding='utf-8')
 
@@ -40,4 +37,4 @@ for index, i in enumerate(mylist):
     sheet.write(index+1, 9, i['sem-8'])
     sheet.write(index+1, 10, i['total_cgpa'])
 
-book.save('trials.xls')
+book.save('diploma.xls')

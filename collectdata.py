@@ -1,7 +1,4 @@
 from selenium import webdriver
-import urllib2
-import time
-import json
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
@@ -9,12 +6,12 @@ from bs4 import BeautifulSoup
 import dill as pickle
 main_list = [];
 
-for i in range(02,50):
+for i in range(6,7):
         try:
             browser = webdriver.PhantomJS('./phantomjs');
             browser.get("http://125.17.181.197/StudentView.php");
             if(i <= 9):
-                browser.find_element_by_name('reg_no').send_keys('31231410700'+str(i));
+                browser.find_element_by_name('reg_no').send_keys('31231410730'+str(i));
             else:
                 browser.find_element_by_name('reg_no').send_keys('3123141070'+str(i));
             browser.find_element_by_id('submit').click()
@@ -38,7 +35,7 @@ for i in range(02,50):
                     list["sem-"+str(idx)] = i.get_text()
 
             main_list.append(list);
-            print main_list
+            print list
             browser.close()
 
         except:
